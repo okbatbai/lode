@@ -1,0 +1,233 @@
+/* Responsive Styles */
+
+/* Tablet (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .content-area {
+        flex-direction: column;
+    }
+    
+    .side-panel {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .stats-overview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .number-grid {
+        grid-template-columns: repeat(10, 1fr);
+    }
+    
+    .toolbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .toolbar-left,
+    .toolbar-right {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    /* Header adjustments */
+    .app-title {
+        font-size: 1.2rem;
+    }
+    
+    .header-controls {
+        gap: 5px;
+    }
+    
+    .btn-icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    /* Tab navigation */
+    .tab-navigation {
+        padding: 10px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .tab-button {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+    
+    .tab-button span {
+        display: none;
+    }
+    
+    .tab-button i {
+        font-size: 1.2rem;
+    }
+    
+    /* Statistics cards */
+    .stats-overview {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .stat-card {
+        padding: 15px;
+    }
+    
+    /* Number grid */
+    .number-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
+    }
+    
+    .number-cell {
+        font-size: 0.9rem;
+    }
+    
+    /* Data display */
+    .data-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Table scroll */
+    .data-table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .data-table {
+        min-width: 500px;
+    }
+    
+    /* Modals */
+    .modal {
+        width: 95%;
+        max-height: 85vh;
+    }
+    
+    .modal.large {
+        width: 95%;
+    }
+    
+    /* Search box */
+    .search-box {
+        min-width: 150px;
+    }
+    
+    /* Export grid */
+    .export-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Charts grid */
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .chart-container {
+        height: 250px;
+    }
+}
+
+/* Small mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    /* Further reductions */
+    .app-title span {
+        display: none;
+    }
+    
+    .number-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .btn {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+    
+    .modal-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .stat-value {
+        font-size: 1.2rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .app-header,
+    .tab-navigation,
+    .toolbar,
+    .side-panel,
+    .btn,
+    .modal {
+        display: none !important;
+    }
+    
+    .content-area {
+        display: block;
+    }
+    
+    .data-table {
+        border: 1px solid #000;
+    }
+    
+    .data-table th,
+    .data-table td {
+        border: 1px solid #000;
+        padding: 5px;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi) {
+    .app-title i,
+    .btn i {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Landscape orientation for mobile */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .app-header {
+        position: static;
+    }
+    
+    .number-grid {
+        grid-template-columns: repeat(10, 1fr);
+    }
+    
+    .stats-overview {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .btn,
+    .tab-button,
+    .number-cell {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    .btn-icon-small {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Dark mode adjustments for mobile */
+@media screen and (max-width: 768px) {
+    .dark-mode {
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+        --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+    }
+}

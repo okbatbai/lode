@@ -1,0 +1,55 @@
+{
+    "name": "Quản Lý Lô Đề Pro",
+    "short_name": "LôĐề Pro",
+    "description": "Ứng dụng quản lý lô đề chuyên nghiệp",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#667eea",
+    "theme_color": "#667eea",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "assets/icons/icon-72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/icons/icon-96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/icons/icon-128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/icons/icon-144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Nhập nhanh",
+            "url": "/?action=quick-input",
+            "icon": "assets/icons/quick-input.png"
+        },
+        {
+            "name": "Xem thống kê",
+            "url": "/?tab=statistics",
+            "icon": "assets/icons/stats.png"
+        }
+    ]
+}
